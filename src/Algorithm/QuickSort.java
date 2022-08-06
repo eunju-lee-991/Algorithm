@@ -13,36 +13,6 @@ public class QuickSort {
     }
 
     private static void quickSort(int[] array, int start, int end){
-        /*if (start >= end) { // 원소가 한 개인 경우
-            return;
-        }
-
-        int pivot = start;
-        int i = start + 1;
-        int j = end;
-        int temp;
-
-        while (i <= j){ // 엇갈릴 때까지
-            System.out.println(i);
-            System.out.println(pivot);
-            while (array[i] <= array[pivot] && i < end ){ // 피벗보다 큰 값을 만날 때까지 오른쪽으로 이동
-                i++;
-            }
-            while (array[j] >= array[pivot] && j > start) { // 피벗보다 작은 값을 만날 때까지 왼쪽으로 이동
-                j--;
-            }
-
-            if (i > j) { // 엇갈린 상태면 피벗과 교체
-                temp = array[j];
-                array[j] = array[pivot];
-                array[pivot] = temp;
-            }else{
-                temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;
-            }
-        }*/
-
         if (start >= end) {
             return;
         }
